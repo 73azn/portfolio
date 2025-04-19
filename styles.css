@@ -515,8 +515,13 @@ section, .section-title, .about-content, .projects-grid, .contact-intro {
 
 
 #contact {
-    background-color: white;
+    background: linear-gradient(120deg, #16161a 40%, #232946 100%);
     text-align: center;
+    transition: background 0.3s;
+}
+
+.light-theme #contact {
+    background: white;
 }
 
 .contact-intro {
@@ -528,23 +533,37 @@ section, .section-title, .about-content, .projects-grid, .contact-intro {
 .contact-links {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 25px 20px;
     border-radius: var(--border-radius);
-    background-color: var(--light-color);
+    background: var(--card-color);
+    border: 1.5px solid var(--border-color);
     transition: var(--transition);
-    width: 150px;
+    width: 120px;
+    box-shadow: var(--box-shadow);
+}
+
+.light-theme .contact-item {
+    background: var(--surface-color);
+    border: 1.5px solid #e0e0e0;
 }
 
 .contact-item:hover {
-    background-color: var(--primary-color);
+    background: var(--primary-color);
     color: white;
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px var(--shadow-color);
 }
 
 .contact-item:hover i,
