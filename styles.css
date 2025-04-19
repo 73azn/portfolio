@@ -320,11 +320,33 @@ section, .section-title, .about-content, .projects-grid, .contact-intro {
 
 .about-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     gap: 40px;
     align-items: center;
     background: transparent;
     color: var(--text-color);
+}
+
+.about-image {
+    text-align: center;
+}
+
+.about-image img {
+    width: 85%;
+    max-width: 280px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px var(--shadow-color);
+    border: 3px solid var(--border-color);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-image img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 40px var(--shadow-color);
+}
+
+.light-theme .about-image img {
+    border-color: #e0e0e0;
 }
 
 .about-text p {
@@ -642,6 +664,12 @@ footer p {
     }
     .about-content {
         grid-template-columns: 1fr;
+    }
+    .about-image {
+        margin-bottom: 20px;
+    }
+    .about-image img {
+        max-width: 220px;
     }
     .contact-links {
         flex-direction: column;
