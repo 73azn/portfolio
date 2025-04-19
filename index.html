@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZIM - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-flex">
+            <h1>AZIM</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" title="Toggle dark/light mode"><i class="fas fa-moon"></i></button>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Software Developer</h2>
+                <p>Building creative solutions with code</p>
+                <a href="https://github.com/73azn" class="btn" target="_blank">View GitHub <i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="fade-in">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a highly adaptable and fast-learning software developer with a proven track record in Java, JavaScript, Kotlin, Ruby, and modern web technologies. I have hands-on experience with infrastructure tools like Nginx and Cloudflare Tunneling, and I thrive on solving complex problems and delivering robust, scalable solutions.</p>
+                    <p>I am a Computer Science student at Taibah University, where I am developing a strong theoretical foundation in algorithms, data structures, and software engineering principles that complement my practical development skills.</p>
+                </div>
+                <div class="skills">
+                    <h3>Skills</h3>
+                    <div class="skill-tags">
+                        <span>Java</span>
+                        <span>JavaScript</span>
+                        <span>Kotlin</span>
+                        <span>Ruby</span>
+                        <span>HTML/CSS</span>
+                        <span>Data Structures</span>
+                        <span>Algorithms</span>
+                        <span>Nginx</span>
+                        <span>Cloudflare Tunneling</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+<section id="projects" class="fade-in">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+    <!-- Static Hard Projects -->
+    <div class="project-card enhanced">
+        <div class="project-header">
+            <h3><a href="project.html?repo=rubys-projects">Ruby Projects</a></h3>
+            <div class="project-links">
+                <a href="https://github.com/73azn/rubys-projects" target="_blank" title="View on GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <p>Collection of Ruby repositories and experiments. Demonstrates versatility in scripting and backend development using Ruby.</p>
+        <div class="project-meta">
+            <span class="project-lang">Ruby</span>
+        </div>
+    </div>
+    <div class="project-card enhanced">
+        <div class="project-header">
+            <h3><a href="project.html?repo=Algo_data">Algorithm & Data Structures</a></h3>
+            <div class="project-links">
+                <a href="https://github.com/73azn/Algo_data" target="_blank" title="View on GitHub"><i class="fab fa-github"></i></a>
+            </div>
+            <span class="project-lang">Swing</span>
+        </div>
+    </div>
+    <div class="project-card enhanced">
+        <div class="project-header">
+            <h3><a href="project.html?repo=basicConvertor_android">Android Converter</a></h3>
+            <div class="project-links">
+                <a href="https://github.com/73azn/basicConvertor_android" target="_blank" title="View on GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <p>Simple converter application built with Kotlin for Android.</p>
+        <div class="project-meta">
+            <span class="project-lang">Kotlin</span>
+            <span class="project-lang">Android</span>
+        </div>
+    </div>
+    <div class="project-card enhanced">
+        <div class="project-header">
+            <h3><a href="project.html?repo=visualize_data_structure">Data Structure Visualizer</a></h3>
+            <div class="project-links">
+                <a href="https://github.com/73azn/visualize_data_structure" target="_blank" title="View on GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <p>Visualize data structures using CSS, HTML and JavaScript.</p>
+        <div class="project-meta">
+            <span class="project-lang">JavaScript</span>
+            <span class="project-lang">HTML</span>
+            <span class="project-lang">CSS</span>
+        </div>
+    </div>
+    <div class="project-card enhanced">
+        <div class="project-header">
+            <h3><a href="project.html?repo=destiny2">Destiny 2 Helper</a></h3>
+            <div class="project-links">
+                <a href="https://github.com/73azn/destiny2" target="_blank" title="View on GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <p>4th encounter outside helper for Destiny 2 (JavaScript).</p>
+        <div class="project-meta">
+            <span class="project-lang">JavaScript</span>
+        </div>
+    </div>
+</div>
+
+<!-- Other Projects -->
+<div class="section-divider"></div>
+<section id="other-projects" class="fade-in">
+    <div class="container">
+        <h2 class="section-title">Other Projects</h2>
+        <div id="other-projects-list" class="projects-grid"></div>
+    </div>
+</section>
+            </div>
+        </div>
+    </section>
+
+    
+    <div class="section-divider"></div>
+<section id="contact" class="fade-in">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <p class="contact-intro">Interested in collaborating or have questions about my projects?</p>
+            <div class="contact-links">
+                <a href="https://github.com/73azn" class="contact-item" target="_blank">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="mailto:your-email@example.com" class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+    <div class="container footer-flex">
+        <div class="footer-social">
+            <a href="https://github.com/73azn" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="mailto:your-email@example.com" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p>&copy; 2025 AZIM. All rights reserved.</p>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
